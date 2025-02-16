@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP\\FirstASp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D12919CF-2389-40AD-9ABE-9888469C0F92}|FirstASp\\FirstASp.csproj|d:\\asp\\firstasp\\firstasp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D12919CF-2389-40AD-9ABE-9888469C0F92}|FirstASp\\FirstASp.csproj|solutionrelative:firstasp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D12919CF-2389-40AD-9ABE-9888469C0F92}|FirstASp\\FirstASp.csproj|d:\\asp\\firstasp\\firstasp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D12919CF-2389-40AD-9ABE-9888469C0F92}|FirstASp\\FirstASp.csproj|solutionrelative:firstasp\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\ASP\\FirstASp\\FirstASp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "FirstASp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\ASP\\FirstASp\\FirstASp\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "FirstASp\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAACEAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-16T15:51:14.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "D:\\ASP\\FirstASp\\FirstASp\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "FirstASp\\ScaffoldingReadMe.txt",
+              "ToolTip": "D:\\ASP\\FirstASp\\FirstASp\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "FirstASp\\ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-02-16T15:48:59.873Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
