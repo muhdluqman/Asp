@@ -12,7 +12,7 @@ builder.Services.AddDefaultIdentity<SampleUser>(options => options.SignIn.Requir
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-
+builder.Services.AddRazorPages();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -31,4 +31,5 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
-app.Run();
+app.MapRazorPages();
+app.Run("https://localhost:5001");

@@ -1,13 +1,13 @@
-﻿using FirstASp.Areas.Identity.Data;
+﻿using AuthSystem.Areas.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace FirstASp.Areas.Identity.Data;
+namespace AuthSystem.Data;
 
-public class DBContextASP : IdentityDbContext<SampleUser>
+public class AuthDbContext : IdentityDbContext<SampleUser>
 {
-    public DBContextASP(DbContextOptions<DBContextASP> options)
+    public AuthDbContext(DbContextOptions<AuthDbContext> options)
         : base(options)
     {
     }
