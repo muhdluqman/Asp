@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
 
-namespace AuthSystem.Areas.Identity.Data;
+namespace FirstASp.Areas.Identity.Data;
 
 // Add profile data for application users by adding properties to the ApplicationUser class
 public class SampleUser : IdentityUser
