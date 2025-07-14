@@ -10590,19 +10590,19 @@
     ]
   },
   "packageFolders": {
-    "/Users/luqman/.nuget/packages/": {}
+    "/home/runner/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/luqman/Documents/GitHub/Asp/FirstASp/FirstASp.csproj",
+      "projectUniqueName": "/home/runner/work/Asp/Asp/FirstASp/FirstASp.csproj",
       "projectName": "FirstASp",
-      "projectPath": "/Users/luqman/Documents/GitHub/Asp/FirstASp/FirstASp.csproj",
-      "packagesPath": "/Users/luqman/.nuget/packages/",
-      "outputPath": "/Users/luqman/Documents/GitHub/Asp/FirstASp/obj/",
+      "projectPath": "/home/runner/work/Asp/Asp/FirstASp/FirstASp.csproj",
+      "packagesPath": "/home/runner/.nuget/packages/",
+      "outputPath": "/home/runner/work/Asp/Asp/FirstASp/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/luqman/.nuget/NuGet/NuGet.Config"
+        "/home/runner/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
@@ -10660,6 +10660,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Host.linux-x64",
+            "version": "[6.0.36, 6.0.36]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.36, 6.0.36]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -10668,7 +10682,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.428/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/8.0.117/RuntimeIdentifierGraph.json"
       }
     }
   }
