@@ -2,8 +2,223 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-    <p>User Id:@ViewData["UserId"]</p>
-</div>
+<!-- Hero Section -->
+<section class="hero-section position-relative overflow-hidden">
+    <div class="hero-background">
+        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" 
+             alt="Medical Background" class="hero-bg-image" />
+        <div class="hero-overlay"></div>
+    </div>
+    
+    <div class="container position-relative">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center text-white py-5">
+                <h1 class="display-4 fw-bold mb-2">Hello, Dr Lee</h1>
+                <p class="lead mb-4">MedShop Professional - Your Trusted Medical Supply Partner</p>
+                
+                <!-- Search Bar -->
+                <div class="search-container bg-white rounded-3 p-3 mb-4">
+                    <div class="row g-2">
+                        <div class="col-lg-8">
+                            <input type="search" class="form-control form-control-lg border-0" 
+                                   placeholder="Search for medicines, medical supplies, equipment..." />
+                        </div>
+                        <div class="col-lg-4">
+                            <button type="submit" class="btn btn-danger btn-lg w-100">
+                                <i class="fas fa-search me-2"></i>Search
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Search Filters -->
+                <div class="search-filters">
+                    <div class="row g-2">
+                        <div class="col-6 col-md-3">
+                            <select class="form-select bg-white text-dark">
+                                <option>Active Ingredient</option>
+                                <option>Paracetamol</option>
+                                <option>Ibuprofen</option>
+                                <option>Aspirin</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-select bg-white text-dark">
+                                <option>Dosage Form</option>
+                                <option>Tablet</option>
+                                <option>Capsule</option>
+                                <option>Syrup</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-select bg-white text-dark">
+                                <option>Therapeutic Category</option>
+                                <option>Analgesics</option>
+                                <option>Antibiotics</option>
+                                <option>Vitamins</option>
+                            </select>
+                        </div>
+                        <div class="col-6 col-md-3">
+                            <select class="form-select bg-white text-dark">
+                                <option>Brand Name</option>
+                                <option>Pfizer</option>
+                                <option>GSK</option>
+                                <option>Johnson & Johnson</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Promotions Section -->
+<section class="promotions-section py-5">
+    <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold mb-0">Special Promotions</h2>
+            <a href="#" class="text-decoration-none text-primary fw-semibold">View all <i class="fas fa-arrow-right ms-1"></i></a>
+        </div>
+        
+        <div class="promotion-carousel position-relative">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="promotion-card bg-gradient-primary text-white rounded-3 p-4 h-100">
+                        <h4 class="fw-bold">30% OFF</h4>
+                        <p class="mb-3">On all prescription medicines</p>
+                        <small>Valid until end of month</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promotion-card bg-gradient-success text-white rounded-3 p-4 h-100">
+                        <h4 class="fw-bold">FREE DELIVERY</h4>
+                        <p class="mb-3">For orders above $100</p>
+                        <small>Express delivery available</small>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="promotion-card bg-gradient-warning text-white rounded-3 p-4 h-100">
+                        <h4 class="fw-bold">BULK DISCOUNT</h4>
+                        <p class="mb-3">Save more on bulk orders</p>
+                        <small>Contact for pricing</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Product Categories -->
+<section class="categories-section py-5 bg-light">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Shop by Category</h2>
+        <div class="row g-4">
+            <div class="col-6 col-md-3">
+                <div class="category-card text-center p-4 bg-white rounded-3 shadow-sm h-100 hover-lift">
+                    <div class="category-icon mb-3">
+                        <i class="fas fa-pills fa-3x text-primary"></i>
+                    </div>
+                    <h5 class="fw-semibold">Prescription Drugs</h5>
+                    <p class="text-muted small mb-0">Licensed medications</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card text-center p-4 bg-white rounded-3 shadow-sm h-100 hover-lift">
+                    <div class="category-icon mb-3">
+                        <i class="fas fa-stethoscope fa-3x text-success"></i>
+                    </div>
+                    <h5 class="fw-semibold">Medical Equipment</h5>
+                    <p class="text-muted small mb-0">Professional tools</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card text-center p-4 bg-white rounded-3 shadow-sm h-100 hover-lift">
+                    <div class="category-icon mb-3">
+                        <i class="fas fa-syringe fa-3x text-warning"></i>
+                    </div>
+                    <h5 class="fw-semibold">Surgical Supplies</h5>
+                    <p class="text-muted small mb-0">Sterile instruments</p>
+                </div>
+            </div>
+            <div class="col-6 col-md-3">
+                <div class="category-card text-center p-4 bg-white rounded-3 shadow-sm h-100 hover-lift">
+                    <div class="category-icon mb-3">
+                        <i class="fas fa-heart fa-3x text-danger"></i>
+                    </div>
+                    <h5 class="fw-semibold">Wellness Products</h5>
+                    <p class="text-muted small mb-0">Health & nutrition</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="featured-products py-5">
+    <div class="container">
+        <h2 class="fw-bold text-center mb-5">Featured Products</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="product-image bg-light p-3 text-center">
+                        <i class="fas fa-pills fa-4x text-primary"></i>
+                    </div>
+                    <div class="product-info p-3">
+                        <h6 class="fw-semibold">Paracetamol 500mg</h6>
+                        <p class="text-muted small mb-2">Pain relief tablets</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$12.99</span>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="product-image bg-light p-3 text-center">
+                        <i class="fas fa-thermometer fa-4x text-success"></i>
+                    </div>
+                    <div class="product-info p-3">
+                        <h6 class="fw-semibold">Digital Thermometer</h6>
+                        <p class="text-muted small mb-2">Fast & accurate</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$24.99</span>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="product-image bg-light p-3 text-center">
+                        <i class="fas fa-band-aid fa-4x text-warning"></i>
+                    </div>
+                    <div class="product-info p-3">
+                        <h6 class="fw-semibold">First Aid Kit</h6>
+                        <p class="text-muted small mb-2">Emergency supplies</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$49.99</span>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-card bg-white rounded-3 shadow-sm h-100">
+                    <div class="product-image bg-light p-3 text-center">
+                        <i class="fas fa-eye-dropper fa-4x text-info"></i>
+                    </div>
+                    <div class="product-info p-3">
+                        <h6 class="fw-semibold">Eye Drops</h6>
+                        <p class="text-muted small mb-2">Lubricating solution</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="fw-bold text-primary">$8.99</span>
+                            <button class="btn btn-sm btn-outline-primary">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

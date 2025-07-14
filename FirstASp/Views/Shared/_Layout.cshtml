@@ -3,36 +3,171 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - FirstASp</title>
+    <title>@ViewData["Title"] - MedShop</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/FirstASp.styles.css" asp-append-version="true" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">FirstASp</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container-fluid px-4">
+                <!-- Logo on the left -->
+                <a class="navbar-brand fw-bold text-primary" asp-area="" asp-controller="Home" asp-action="Index">
+                    <i class="fas fa-pills me-2"></i>MedShop
+                </a>
+                
+                <!-- Navigation items in center -->
+                <div class="navbar-nav mx-auto d-none d-lg-flex">
+                    <a class="nav-link px-3" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                    <a class="nav-link px-3" href="#">Products</a>
+                    <a class="nav-link px-3" href="#">Categories</a>
+                    <a class="nav-link px-3" href="#">About</a>
+                    <a class="nav-link px-3" href="#">Contact</a>
+                </div>
+                
+                <!-- Right side icons -->
+                <div class="d-flex align-items-center">
+                    <!-- Search icon for mobile -->
+                    <button class="btn btn-link text-secondary d-lg-none me-2" type="button">
+                        <i class="fas fa-search"></i>
+                    </button>
+                    
+                    <!-- Shopping cart with badge -->
+                    <div class="position-relative me-3">
+                        <button class="btn btn-link text-secondary" type="button">
+                            <i class="fas fa-shopping-cart fa-lg"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                3
+                                <span class="visually-hidden">items in cart</span>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <!-- Notifications bell -->
+                    <div class="position-relative me-3">
+                        <button class="btn btn-link text-secondary" type="button">
+                            <i class="fas fa-bell fa-lg"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                                2
+                                <span class="visually-hidden">notifications</span>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <!-- User profile -->
                     <partial name="_LoginPartial.cshtml" />
+                    
+                    <!-- Mobile menu toggle -->
+                    <button class="navbar-toggler ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+                
+                <!-- Mobile navigation menu -->
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav d-lg-none mt-3 border-top pt-3">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <a class="nav-link" href="#">Products</a>
+                        <a class="nav-link" href="#">Categories</a>
+                        <a class="nav-link" href="#">About</a>
+                        <a class="nav-link" href="#">Contact</a>
+                    </div>
                 </div>
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
+    <div class="main-content">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="bg-dark text-light py-5">
         <div class="container">
-            &copy; 2025 - FirstASp - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row g-4">
+                <!-- Company Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-pills me-2 text-primary"></i>MedShop
+                    </h5>
+                    <p class="text-light-emphasis">Your trusted partner for professional medical supplies and pharmaceuticals.</p>
+                    <div class="social-links">
+                        <a href="#" class="text-light me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Home</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Products</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Categories</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Help & Support -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-semibold mb-3">Help & Support</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Shipping Info</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Returns</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Track Order</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Support</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Legal -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-semibold mb-3">Legal</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a asp-area="" asp-controller="Home" asp-action="Privacy" class="text-light-emphasis text-decoration-none">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Terms of Service</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Compliance</a></li>
+                        <li class="mb-2"><a href="#" class="text-light-emphasis text-decoration-none">Licensing</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Download App -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3">Download Our App</h6>
+                    <p class="text-light-emphasis small mb-3">Scan to download mobile app</p>
+                    <div class="qr-section bg-white p-3 rounded text-center mb-3">
+                        <i class="fas fa-qrcode fa-3x text-dark"></i>
+                        <p class="small text-dark mt-2 mb-0">QR Code</p>
+                    </div>
+                    <div class="app-badges">
+                        <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=App+Store" alt="App Store" class="me-2 mb-2" style="height: 35px;">
+                        <img src="https://via.placeholder.com/120x40/000000/FFFFFF?text=Google+Play" alt="Google Play" style="height: 35px;">
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4 border-secondary">
+            
+            <!-- Bottom Footer -->
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-light-emphasis small mb-0">
+                        &copy; 2025 MedShop Professional. All rights reserved. | Registration No: MS-2025-001
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-light-emphasis small mb-0">
+                        Licensed Healthcare Supplier | FDA Certified
+                    </p>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

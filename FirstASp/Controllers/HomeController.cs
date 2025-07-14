@@ -7,7 +7,6 @@ using System.Diagnostics;
 
 namespace AuthSystem.Controllers
 {
-    [Authorize]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -19,6 +18,7 @@ namespace AuthSystem.Controllers
             this._userManager = userManager;
         }
 
+        [AllowAnonymous]
         public IActionResult Index()
         {
             ViewData["UserID"]=_userManager.GetUserId(this.User);

@@ -38,4 +38,13 @@ app.MapControllerRoute(
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.MapRazorPages();
-app.Run("https://localhost:5001");
+
+// Run on HTTP for development
+if (app.Environment.IsDevelopment())
+{
+    app.Run("http://localhost:5000");
+}
+else
+{
+    app.Run();
+}
